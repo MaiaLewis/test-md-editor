@@ -1,11 +1,12 @@
 :root {
-  --bg: #1e1e1e;
-  --panel: #252526;
-  --border: #333;
-  --text: #e6e6e6;
-  --muted: #9aa0a6;
-  --accent: #4f8cc9;
-  --code-bg: #2d2d2d;
+  --bg: #eaf2fb;
+  --panel: #d7e6f5;
+  --border: #b6cce3;
+  --text: #0a1a3d;
+  --muted: #4a5d85;
+  --accent: #1d3a8a;
+  --code-bg: #d0dff0;
+  --preview-bg: #f3f7fc;
 }
 
 * { box-sizing: border-box; }
@@ -41,6 +42,7 @@ body {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .actions {
@@ -49,7 +51,7 @@ body {
 }
 
 .actions button {
-  background: #2d2d30;
+  background: #c4d8ee;
   color: var(--text);
   border: 1px solid var(--border);
   padding: 0.35rem 0.75rem;
@@ -59,7 +61,7 @@ body {
 }
 
 .actions button:hover {
-  background: #37373d;
+  background: #b0caea;
   border-color: var(--accent);
 }
 
@@ -84,10 +86,15 @@ body {
   tab-size: 2;
 }
 
+.editor::placeholder {
+  color: var(--muted);
+}
+
 .preview {
   padding: 1rem 1.5rem;
   overflow-y: auto;
-  background: #1a1a1a;
+  background: var(--preview-bg);
+  color: var(--text);
 }
 
 .markdown-body h1,
@@ -96,6 +103,7 @@ body {
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.3em;
   margin-top: 1.5em;
+  color: var(--text);
 }
 
 .markdown-body h1:first-child { margin-top: 0; }
@@ -108,6 +116,7 @@ body {
   border-radius: 3px;
   font-size: 0.9em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  color: var(--text);
 }
 
 .markdown-body pre {
@@ -127,7 +136,7 @@ body {
   margin: 1em 0;
   padding: 0.2em 1em;
   color: var(--muted);
-  background: rgba(79, 140, 201, 0.05);
+  background: rgba(29, 58, 138, 0.06);
 }
 
 .markdown-body table {
