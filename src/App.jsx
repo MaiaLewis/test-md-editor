@@ -22,6 +22,14 @@ function greet(name) {
 \`\`\`
 
 > Tip: your content is saved as you type.
+
+---
+
+## Joke of the day 🌉
+
+**Why did the Golden Gate Bridge break up with the Bay Bridge?**
+
+> Because it was tired of always being the one holding everything together! 😄
 `;
 
 marked.setOptions({ gfm: true, breaks: true });
